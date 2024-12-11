@@ -1,21 +1,13 @@
-# SPT-AKI Alternative launcher
+# SPT Alternative launcher
+![image](https://github.com/user-attachments/assets/578ce6a8-14af-42ff-b373-db110d41ce77)
 
-![image](https://user-images.githubusercontent.com/62751457/117296913-e3baaa00-ae75-11eb-84d3-320b3bbfd85a.png)
+![image](https://github.com/user-attachments/assets/ee269a2a-e85e-4fec-bc8d-d10e8dcc266d)
 
+![image](https://github.com/user-attachments/assets/2082ecc4-d3e0-497d-832e-ab7e0bddf1ae)
 
-![image](https://user-images.githubusercontent.com/62751457/117324613-3e60ff80-ae90-11eb-87bb-09d554237b92.png)
+![image](https://github.com/user-attachments/assets/70ea0f6d-b2ac-422b-b02f-18b36d3af40d)
 
-
-![image](https://user-images.githubusercontent.com/62751457/117296962-f339f300-ae75-11eb-9107-e5ae7d1db9e4.png)
-
-
-![image](https://user-images.githubusercontent.com/62751457/117296970-f503b680-ae75-11eb-96be-fc8d1684b1b4.png)
-
-
-![image](https://user-images.githubusercontent.com/62751457/117564635-5792c780-b0ad-11eb-97da-2c3dba0f38a5.png)
-
-
-![image](https://user-images.githubusercontent.com/62751457/117297858-fc778f80-ae76-11eb-9f9b-a361a667b691.png)
+![image](https://github.com/user-attachments/assets/b27cf33c-fae7-4966-93c5-370d2e0eaf8d)
 
 ### Features : 
 
@@ -23,14 +15,11 @@
 - profile editor : easily edit your skill, hideout, experience, and trader standings
 - profile creator : if its your first time or having fresh installation of SPT-AKI this application will prompt you to create a new profile :) 
 
-
-
 to use it : download and simply move the .exe into the SERVER folder, at the root folder : )
-
 
 _ _ _ _ _ _
 ## About the code : 
-this program run on .NET 6 SDK and winForms framework
+this program run on .NET 9.0 framwork and winForms
 
 no nuget packages installed
 majority of the functions and implementations are commented if you are curious how this thing work
