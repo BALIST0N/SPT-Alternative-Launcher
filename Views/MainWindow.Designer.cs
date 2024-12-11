@@ -1,4 +1,4 @@
-﻿namespace SPTAKI_Alt_Launcher
+﻿namespace SPT_Alt_Launcher
 {
     partial class MainWindow
     {
@@ -7,18 +7,6 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
 
         #region Windows Form Designer generated code
 
@@ -40,15 +28,14 @@
             startServerChackBox = new CheckBox();
             GameLocationFolderBrowser = new FolderBrowserDialog();
             backendUrlTextBox = new TextBox();
-            BackgroundColorSelector = new CheckBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Tomato;
-            label1.Font = new Font("Candara", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Candara", 11.25F);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(14, 21);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -58,9 +45,9 @@
             // 
             // startButton
             // 
-            startButton.BackColor = Color.FromArgb(32, 32, 32);
+            startButton.BackColor = Color.FromArgb(23, 32, 40);
             startButton.FlatStyle = FlatStyle.Flat;
-            startButton.Font = new Font("Trebuchet MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            startButton.Font = new Font("Trebuchet MS", 15.75F, FontStyle.Bold);
             startButton.ForeColor = SystemColors.Control;
             startButton.Location = new Point(481, 115);
             startButton.Margin = new Padding(4, 3, 4, 3);
@@ -73,10 +60,10 @@
             // 
             // profilesListBox
             // 
-            profilesListBox.BackColor = Color.FromArgb(32, 32, 32);
+            profilesListBox.BackColor = Color.FromArgb(23, 32, 40);
             profilesListBox.DropDownStyle = ComboBoxStyle.DropDownList;
             profilesListBox.FlatStyle = FlatStyle.Flat;
-            profilesListBox.Font = new Font("Candara", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            profilesListBox.Font = new Font("Candara", 11.25F, FontStyle.Bold);
             profilesListBox.ForeColor = SystemColors.Window;
             profilesListBox.FormattingEnabled = true;
             profilesListBox.Items.AddRange(new object[] { "Select a Profile !" });
@@ -89,8 +76,8 @@
             // gamePathTextBox
             // 
             gamePathTextBox.AccessibleDescription = "";
-            gamePathTextBox.BackColor = Color.FromArgb(32, 32, 32);
-            gamePathTextBox.Font = new Font("Candara", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
+            gamePathTextBox.BackColor = Color.FromArgb(23, 32, 40);
+            gamePathTextBox.Font = new Font("Candara", 11.25F, FontStyle.Italic);
             gamePathTextBox.ForeColor = Color.Red;
             gamePathTextBox.Location = new Point(134, 16);
             gamePathTextBox.Margin = new Padding(4, 3, 4, 3);
@@ -102,9 +89,9 @@
             // 
             // profileEditButton
             // 
-            profileEditButton.BackColor = Color.FromArgb(32, 32, 32);
+            profileEditButton.BackColor = Color.FromArgb(23, 32, 40);
             profileEditButton.FlatStyle = FlatStyle.Flat;
-            profileEditButton.Font = new Font("Candara", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            profileEditButton.Font = new Font("Candara", 11.25F);
             profileEditButton.ForeColor = SystemColors.Control;
             profileEditButton.Location = new Point(481, 53);
             profileEditButton.Margin = new Padding(4, 3, 4, 3);
@@ -119,7 +106,7 @@
             // 
             serverOutputRichBox.BackColor = SystemColors.ActiveCaptionText;
             serverOutputRichBox.BorderStyle = BorderStyle.FixedSingle;
-            serverOutputRichBox.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            serverOutputRichBox.Font = new Font("Consolas", 9.75F);
             serverOutputRichBox.ForeColor = Color.Lime;
             serverOutputRichBox.Location = new Point(0, 185);
             serverOutputRichBox.Margin = new Padding(4, 3, 4, 3);
@@ -131,9 +118,9 @@
             // backendUrlLabel
             // 
             backendUrlLabel.AutoSize = true;
-            backendUrlLabel.BackColor = Color.SandyBrown;
-            backendUrlLabel.Font = new Font("Candara", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            backendUrlLabel.ForeColor = Color.Black;
+            backendUrlLabel.BackColor = Color.Transparent;
+            backendUrlLabel.Font = new Font("Candara", 11.25F);
+            backendUrlLabel.ForeColor = Color.White;
             backendUrlLabel.Location = new Point(14, 144);
             backendUrlLabel.Margin = new Padding(4, 0, 4, 0);
             backendUrlLabel.Name = "backendUrlLabel";
@@ -143,6 +130,7 @@
             // 
             // killServerButton
             // 
+            killServerButton.BackColor = Color.FromArgb(23, 32, 40);
             killServerButton.FlatStyle = FlatStyle.Flat;
             killServerButton.ForeColor = SystemColors.Control;
             killServerButton.Location = new Point(399, 115);
@@ -151,7 +139,7 @@
             killServerButton.Size = new Size(75, 57);
             killServerButton.TabIndex = 10;
             killServerButton.Text = "CLOSE SERVER";
-            killServerButton.UseVisualStyleBackColor = true;
+            killServerButton.UseVisualStyleBackColor = false;
             killServerButton.Visible = false;
             killServerButton.Click += killServerButton_Click;
             // 
@@ -177,27 +165,14 @@
             // backendUrlTextBox
             // 
             backendUrlTextBox.AccessibleDescription = "";
-            backendUrlTextBox.BackColor = Color.SandyBrown;
-            backendUrlTextBox.BorderStyle = BorderStyle.None;
-            backendUrlTextBox.Font = new Font("Candara", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
-            backendUrlTextBox.ForeColor = Color.Black;
-            backendUrlTextBox.Location = new Point(127, 143);
+            backendUrlTextBox.BackColor = Color.FromArgb(23, 32, 40);
+            backendUrlTextBox.Font = new Font("Candara", 11.25F, FontStyle.Italic);
+            backendUrlTextBox.ForeColor = Color.White;
+            backendUrlTextBox.Location = new Point(122, 141);
             backendUrlTextBox.Margin = new Padding(4, 3, 4, 3);
             backendUrlTextBox.Name = "backendUrlTextBox";
-            backendUrlTextBox.Size = new Size(163, 19);
+            backendUrlTextBox.Size = new Size(163, 26);
             backendUrlTextBox.TabIndex = 12;
-            // 
-            // BackgroundColorSelector
-            // 
-            BackgroundColorSelector.AutoSize = true;
-            BackgroundColorSelector.BackColor = Color.Transparent;
-            BackgroundColorSelector.Location = new Point(652, 91);
-            BackgroundColorSelector.Name = "BackgroundColorSelector";
-            BackgroundColorSelector.Size = new Size(15, 14);
-            BackgroundColorSelector.TabIndex = 13;
-            BackgroundColorSelector.TextAlign = ContentAlignment.MiddleCenter;
-            BackgroundColorSelector.UseVisualStyleBackColor = false;
-            BackgroundColorSelector.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // MainWindow
             // 
@@ -205,8 +180,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 32, 32);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(681, 186);
-            Controls.Add(BackgroundColorSelector);
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(684, 181);
             Controls.Add(backendUrlTextBox);
             Controls.Add(startServerChackBox);
             Controls.Add(killServerButton);
@@ -217,14 +192,15 @@
             Controls.Add(gamePathTextBox);
             Controls.Add(profilesListBox);
             Controls.Add(startButton);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(697, 600);
-            MinimumSize = new Size(697, 179);
+            MaximumSize = new Size(700, 600);
+            MinimumSize = new Size(700, 220);
             Name = "MainWindow";
-            Text = "SPT-AKI Launcher (Alternative Version)";
+            Text = "SPT Launcher (Alternative Version)";
             Shown += MainWindow_Shown;
             ResumeLayout(false);
             PerformLayout();
@@ -242,6 +218,5 @@
         private CheckBox startServerChackBox;
         private FolderBrowserDialog GameLocationFolderBrowser;
         private TextBox backendUrlTextBox;
-        private CheckBox BackgroundColorSelector;
     }
 }

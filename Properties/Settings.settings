@@ -1,15 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SPTAKI_Alt_Launcher.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SPT_Alt_Launcher.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="gameFolder" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT SPT FOLDER HERE</Value>
-    </Setting>
     <Setting Name="backendURL" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://127.0.0.1:6969</Value>
     </Setting>
-    <Setting Name="blackbg" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="gameFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Click here to select Gamepath</Value>
     </Setting>
   </Settings>
 </SettingsFile>

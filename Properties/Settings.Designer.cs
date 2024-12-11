@@ -8,30 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SPTAKI_Alt_Launcher.Properties {
+namespace SPT_Alt_Launcher.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.12.0.0")]
+    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT SPT FOLDER HERE")]
-        public string gameFolder {
-            get {
-                return ((string)(this["gameFolder"]));
-            }
-            set {
-                this["gameFolder"] = value;
             }
         }
         
@@ -49,13 +37,13 @@ namespace SPTAKI_Alt_Launcher.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool blackbg {
+        [global::System.Configuration.DefaultSettingValueAttribute("Click here to select Gamepath")]
+        public string gameFolder {
             get {
-                return ((bool)(this["blackbg"]));
+                return ((string)(this["gameFolder"]));
             }
             set {
-                this["blackbg"] = value;
+                this["gameFolder"] = value;
             }
         }
     }

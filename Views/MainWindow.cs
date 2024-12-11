@@ -1,12 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
-using SPTAKI_Alt_Launcher.Properties;
-using System;
+using SPT_Alt_Launcher.Properties;
 using System.Diagnostics;
-using System.Reflection;
 using System.Text;
-using System.Xml.Linq;
 
-namespace SPTAKI_Alt_Launcher
+namespace SPT_Alt_Launcher
 {
     public partial class MainWindow : Form
     {
@@ -25,7 +22,6 @@ namespace SPTAKI_Alt_Launcher
             profilesListBox.SelectedIndex = 0;
             gamePathTextBox.Text = Globals.gameFolder;
             backendUrlTextBox.Text = Globals.backendUrl;
-            BackgroundColorSelector.Checked = Settings.Default.blackbg;
             backendUrlTextBox.TextChanged += backendUrlTextBox_TextChanged;
             profilesListBox.SelectedIndexChanged += profilesListBox_SelectedIndexChanged;
             gamePathTextBox.TextChanged += gamePathTextBox_TextChanged;
@@ -119,7 +115,7 @@ namespace SPTAKI_Alt_Launcher
             {
                 if (Directory.Exists(Globals.profilesFolder.Replace("/profiles", "")) == false) //if there is not a /user folder
                 {
-                    MessageBox.Show("unable to find profiles, make sure the launcher is in SPT-AKI SERVER folder");
+                    MessageBox.Show("unable to find profiles, make sure the launcher is in SPT SERVER folder");
                 }
                 else
                 {
@@ -175,8 +171,8 @@ namespace SPTAKI_Alt_Launcher
                 if (gamePathTextBox.ForeColor != Color.White) //no need to save again if its already saved : ) 
                 {
                     Globals.gameFolder = gamePathTextBox.Text;
-                    Properties.Settings.Default.gameFolder = Globals.gameFolder;
-                    Properties.Settings.Default.Save();
+                    Settings.Default.gameFolder = Globals.gameFolder;
+                    Settings.Default.Save();
                     gamePathTextBox.ForeColor = Color.White;
                 }
 
@@ -226,50 +222,11 @@ namespace SPTAKI_Alt_Launcher
             }
             else
             {
-                this.Height = 225;
+                this.Height = 220;
                 this.serverOutputRichBox.Clear();
                 this.startButton.Enabled = true;
                 this.killServerButton.Hide();
             }
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.BackgroundColorSelector.Checked == true)
-            {
-                this.BackgroundImage = null;
-
-                this.label1.BackColor = Color.Transparent;
-                this.label1.ForeColor = Color.White;
-
-                this.backendUrlLabel.BackColor = Color.Transparent;
-                this.backendUrlLabel.ForeColor = Color.White;
-
-                this.backendUrlTextBox.BackColor = Color.FromArgb(32, 32, 32);
-                this.backendUrlTextBox.BorderStyle = BorderStyle.Fixed3D;
-                this.backendUrlTextBox.ForeColor = Color.White;
-
-
-            }
-            else
-            {
-
-                this.BackgroundImage = Resources.bg;
-
-                this.label1.BackColor = Color.Tomato;
-                this.label1.ForeColor = Color.Black;
-
-                this.backendUrlLabel.BackColor = Color.SandyBrown;
-                this.backendUrlLabel.ForeColor = Color.Black;
-
-                this.backendUrlTextBox.BackColor = Color.SandyBrown;
-                this.backendUrlTextBox.BorderStyle = BorderStyle.None;
-                this.backendUrlTextBox.ForeColor = Color.Black;
-            }
-
-            Settings.Default.blackbg = this.BackgroundColorSelector.Checked;
-            Settings.Default.Save();
-
         }
 
 
@@ -320,7 +277,7 @@ namespace SPTAKI_Alt_Launcher
         private void StartGame(string id)
         {
             string dll = Globals.gameFolder + "/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll";
-            string bpf = Globals.serverFolder + "/Aki_Data/Launcher/Patches/aki-core/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll.bpf";
+            string bpf = Globals.serverFolder + "/SPT_Data/Launcher/Patches/SPT-core/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll.bpf";
 
             Aki.Launcher.Helpers.FilePatcher.Patch(dll, bpf, false);
 
@@ -357,8 +314,8 @@ namespace SPTAKI_Alt_Launcher
             else
             {
                 //kill all the process who where already running the server, to avoid errors
-                Process.GetProcesses().FirstOrDefault(x => x.ProcessName == "Aki.Server")?.Kill();
-                Process.GetProcesses().Where(x => x.ProcessName == "conhost").ToList().ForEach(x => x.Kill());
+                Process.GetProcesses().FirstOrDefault(x => x.ProcessName == "SPT.Server")?.Kill();
+                //Process.GetProcesses().Where(x => x.ProcessName == "conhost").ToList().ForEach(x => x.Kill());
             }
         }
 
@@ -380,9 +337,9 @@ namespace SPTAKI_Alt_Launcher
 
         private void SetConsoleOutputText(string text)
         {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
+            /* InvokeRequired required compares the thread ID of the
+               calling thread to the thread ID of the creating thread.
+               If these threads are different, it returns true. */
             if (this.serverOutputRichBox.InvokeRequired)
             {
                 SetTextCallback d = new SetTextCallback(SetConsoleOutputText);

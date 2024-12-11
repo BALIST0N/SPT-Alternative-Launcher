@@ -1,4 +1,4 @@
-﻿namespace SPTAKI_Alt_Launcher
+﻿namespace SPT_Alt_Launcher
 {
     public class ProfileExtended
     {
