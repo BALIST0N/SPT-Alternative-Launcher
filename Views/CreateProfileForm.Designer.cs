@@ -1,5 +1,5 @@
 ﻿
-namespace SPTAKI_Alt_Launcher
+namespace SPT_Alt_Launcher
 {
     partial class CreateProfileForm
     {
@@ -29,101 +29,101 @@ namespace SPTAKI_Alt_Launcher
         /// </summary>
         private void InitializeComponent()
         {
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.editionListBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.profileCreateButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            usernameTextBox = new TextBox();
+            label1 = new Label();
+            editionListBox = new ComboBox();
+            label2 = new Label();
+            profileCreateButton = new Button();
+            SuspendLayout();
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.AccessibleDescription = "";
-            this.usernameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.usernameTextBox.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextBox.ForeColor = System.Drawing.Color.White;
-            this.usernameTextBox.Location = new System.Drawing.Point(103, 11);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(199, 27);
-            this.usernameTextBox.TabIndex = 3;
-            this.usernameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.usernameTextBox_KeyPress);
+            usernameTextBox.AccessibleDescription = "";
+            usernameTextBox.BackColor = Color.FromArgb(23, 32, 40);
+            usernameTextBox.Font = new Font("Candara", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            usernameTextBox.ForeColor = Color.White;
+            usernameTextBox.Location = new Point(120, 13);
+            usernameTextBox.Margin = new Padding(4, 3, 4, 3);
+            usernameTextBox.Name = "usernameTextBox";
+            usernameTextBox.Size = new Size(231, 27);
+            usernameTextBox.TabIndex = 3;
+            usernameTextBox.KeyPress += usernameTextBox_KeyPress;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "User name :";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Candara", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(9, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 19);
+            label1.TabIndex = 4;
+            label1.Text = "User name :";
             // 
             // editionListBox
             // 
-            this.editionListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.editionListBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.editionListBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editionListBox.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editionListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.editionListBox.FormattingEnabled = true;
-            this.editionListBox.Items.AddRange(new object[] {
-            "Standard",
-            "Left Behind",
-            "Prepare For Escape",
-            "Edge Of Darkness"});
-            this.editionListBox.Location = new System.Drawing.Point(103, 55);
-            this.editionListBox.Name = "editionListBox";
-            this.editionListBox.Size = new System.Drawing.Size(199, 27);
-            this.editionListBox.TabIndex = 5;
+            editionListBox.BackColor = Color.FromArgb(23, 32, 40);
+            editionListBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            editionListBox.FlatStyle = FlatStyle.Flat;
+            editionListBox.Font = new Font("Candara", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            editionListBox.ForeColor = SystemColors.Window;
+            editionListBox.FormattingEnabled = true;
+            editionListBox.Location = new Point(120, 63);
+            editionListBox.Margin = new Padding(4, 3, 4, 3);
+            editionListBox.Name = "editionListBox";
+            editionListBox.Size = new Size(231, 27);
+            editionListBox.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Edition :";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Candara", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(40, 67);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(63, 19);
+            label2.TabIndex = 6;
+            label2.Text = "Edition :";
             // 
             // profileCreateButton
             // 
-            this.profileCreateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.profileCreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.profileCreateButton.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileCreateButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.profileCreateButton.Location = new System.Drawing.Point(1, 115);
-            this.profileCreateButton.Name = "profileCreateButton";
-            this.profileCreateButton.Size = new System.Drawing.Size(313, 38);
-            this.profileCreateButton.TabIndex = 7;
-            this.profileCreateButton.Text = "Create !";
-            this.profileCreateButton.UseVisualStyleBackColor = false;
-            this.profileCreateButton.Click += new System.EventHandler(this.profileCreateButton_Click);
+            profileCreateButton.BackColor = Color.FromArgb(23, 32, 40);
+            profileCreateButton.FlatStyle = FlatStyle.Flat;
+            profileCreateButton.Font = new Font("Candara", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            profileCreateButton.ForeColor = SystemColors.Control;
+            profileCreateButton.Location = new Point(1, 133);
+            profileCreateButton.Margin = new Padding(4, 3, 4, 3);
+            profileCreateButton.Name = "profileCreateButton";
+            profileCreateButton.Size = new Size(365, 44);
+            profileCreateButton.TabIndex = 7;
+            profileCreateButton.Text = "Create !";
+            profileCreateButton.UseVisualStyleBackColor = false;
+            profileCreateButton.Click += profileCreateButton_Click;
             // 
             // CreateProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(314, 154);
-            this.Controls.Add(this.profileCreateButton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.editionListBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.usernameTextBox);
-            this.ForeColor = System.Drawing.SystemColors.Control;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "CreateProfileForm";
-            this.Text = "Create new profile :";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateProfileForm_FormClosing);
-            this.Load += new System.EventHandler(this.CreateProfileForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(23, 32, 40);
+            ClientSize = new Size(366, 178);
+            Controls.Add(profileCreateButton);
+            Controls.Add(label2);
+            Controls.Add(editionListBox);
+            Controls.Add(label1);
+            Controls.Add(usernameTextBox);
+            ForeColor = SystemColors.Control;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "CreateProfileForm";
+            Text = "Create new profile :";
+            FormClosing += CreateProfileForm_FormClosing;
+            Load += CreateProfileForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

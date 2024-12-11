@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace SPTAKI_Alt_Launcher
+namespace SPT_Alt_Launcher
 {
     public partial class EditProfileForm : Form
     {
@@ -87,7 +87,7 @@ namespace SPTAKI_Alt_Launcher
                     }                    
                 }
 
-                using (StreamReader r = new StreamReader(Globals.serverFolder + "/Aki_Data/Server/database/globals.json"))
+                using (StreamReader r = new StreamReader(Globals.serverFolder + "/SPT_Data/Server/database/globals.json"))
                 {
                     dynamic global = JObject.Parse(r.ReadToEnd());
                     weaponMasteringLevels = JsonConvert.DeserializeObject<List<MasteringWeaponLevel>>( (string)global["config"]["Mastering"].ToString() ); 
@@ -98,6 +98,7 @@ namespace SPTAKI_Alt_Launcher
                 MessageBox.Show("profile can't be loaded : " + ex.Message);
                 Close();
             }
+
 
             foreach (HideoutUpgradesArea h in hideoutLevels)
             {

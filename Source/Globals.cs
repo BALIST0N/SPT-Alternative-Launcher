@@ -1,4 +1,4 @@
-﻿namespace SPTAKI_Alt_Launcher
+﻿namespace SPT_Alt_Launcher
 {
     public class Globals
 	{
@@ -23,7 +23,7 @@
             /** 
              * 
 			 * resources for game patcher :
-			 * .bpf /Aki_Data/Launcher/Patches/aki-core/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll.bpf
+			 * .bpf /SPT_Data/Launcher/Patches/SPT-core/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll.bpf
 			 * .dll /EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll
 			 * 
 			**/

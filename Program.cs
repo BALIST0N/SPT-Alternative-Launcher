@@ -1,5 +1,8 @@
-namespace SPTAKI_Alt_Launcher
+namespace SPT_Alt_Launcher
 {
+    //build this app in a single file with this command on terminal (vs2022 -> view -> terminal) :
+    /*      dotnet publish -r win-x64 /p:PublishSingleFile=true /p:IncludeAllContentForSelfExtract=true --self-contained false  */
+
     internal static class Program
     {
         /// <summary>
@@ -8,6 +11,8 @@ namespace SPTAKI_Alt_Launcher
         [STAThread]
         static void Main()
         {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainWindow());
         }
