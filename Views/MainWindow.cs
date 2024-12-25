@@ -328,8 +328,12 @@ namespace SPT_Alt_Launcher
         void proc_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             string res = e.Data;
-            if (res != null)
+            if (res != null )
             {
+                if( res.IndexOf("░") != -1 || res.IndexOf("▓") != -1 )
+                {
+                    return;
+                }
                 res = System.Text.RegularExpressions.Regex.Replace(res, @"\[[0-1];[0-9][a-z]|\[[0-9][0-9][a-z]|\[[0-9][a-z]|\[[0-9][A-Z]", String.Empty); //it should replace all [0;32m things
             }
             SetConsoleOutputText(res + "\n");
